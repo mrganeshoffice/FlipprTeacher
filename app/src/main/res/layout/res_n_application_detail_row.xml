@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:id="@+id/Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_boundary_navi_new"
+            android:padding="5dp"
+           android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/navicolor"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/tv_sereas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="A"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"></TextView>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+
+<!-- <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:minWidth="160dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotolight"
+                                android:text="m   =  "
+                                android:id="@+id/tv_value2"
+                                android:textColor="@color/white"
+                                android:textSize="18dp">
+
+                            </TextView>
+
+                            <EditText
+                                android:textCursorDrawable="@null"
+                                android:layout_width="50dp"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/Yellow"
+                                android:fontFamily="@font/robotolight"
+                                android:text=""
+                                android:id="@+id/et_value2"
+                                android:textColor="@color/white"
+                                android:textSize="15dp">
+
+                            </EditText>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotolight"
+                                android:text="  m   "
+                                android:id="@+id/tv_meter2"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/yelloprange"
+                                android:textSize="18dp"/>
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/iv_tick2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_tick"/>
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/iv_cross2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_cross"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotolight"
+                            android:text="Type of Image   = "
+                            android:textColor="@color/white"
+                            android:textSize="18dp">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:minWidth="150dp"
+                                android:backgroundTint="@color/yelloprange"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinner2"/>
+                            <View
+                                android:layout_width="150dp"
+                                android:layout_height="1dp"
+                                android:background="@color/Yellow"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/iv_tick4"
+                                android:visibility="gone"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_tick"/>
+                            <ImageView
+                                android:id="@+id/iv_cross4"
+                                android:visibility="gone"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_cross"/>
+                        </LinearLayout>
+                        <EditText
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/Yellow"
+                            android:fontFamily="@font/robotolight"
+                            android:paddingLeft="15dp"
+                            android:text="= Real"
+                            android:textColor="@color/white"
+                            android:textSize="15dp">
+
+                        </EditText>
+                    </LinearLayout>-->

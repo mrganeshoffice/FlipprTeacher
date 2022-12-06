@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="10dp"
+
+    android:layout_marginLeft="6dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/iv_image"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginLeft="-3dp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/cardNumber"
+                app:cardBackgroundColor="@color/white">
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/cerapromedium"
+                    android:textColor="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/iv_Streak_active"
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:layout_above="@+id/iv_doubleConfidence"
+                android:layout_alignParentRight="true"
+                 android:padding="2dp"
+                app:tint="@color/OrangeRed"
+                android:src="@drawable/streak_active" />
+
+            <ImageView
+                android:id="@+id/iv_doubleConfidence"
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:padding="2dp"
+                android:layout_above="@+id/cardRank"
+                android:layout_alignParentRight="true"
+                app:tint="@color/OrangeRed"
+                android:src="@drawable/double_active" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                app:cardCornerRadius="6dp"
+                android:id="@+id/cardRank"
+
+                android:layout_alignBottom="@id/iv_image"
+                android:layout_alignParentEnd="true"
+                app:cardBackgroundColor="@color/black">
+                <TextView
+                    android:id="@+id/tv_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="10"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerapromedium"
+                    android:textColor="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardimage"
+        android:fontFamily="@font/ceraprolight"
+        android:textColor="@color/white"
+        android:text="Raani"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:padding="2dp"/>
+
+</RelativeLayout>
+</layout>

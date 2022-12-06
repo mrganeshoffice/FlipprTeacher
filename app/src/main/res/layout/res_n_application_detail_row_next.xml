@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/recycler_Te"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/lleditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:padding="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:minWidth="160dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_weight=".6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotothin"
+                                android:text="m   =  "
+                                android:id="@+id/tv_value1"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"/>
+
+                            <EditText
+                                android:layout_weight=".6"
+                                android:textCursorDrawable="@null"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/Yellow"
+                                android:focusable="false"
+
+                                android:fontFamily="@font/robotothin"
+                                android:imeOptions="actionNext"
+                                android:id="@+id/et_value1"
+                                android:textColor="@color/white"
+                                android:textSize="18sp">
+                            </EditText>
+                            <TextView
+                                android:layout_weight=".6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotothin"
+                                android:text="  m   "
+                                android:id="@+id/tv_meter1"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"/>
+
+                            <LinearLayout
+                                android:layout_weight=".2"
+                                android:visibility="visible"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/iv_tick1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_tick"/>
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/iv_cross1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_cross"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSpinner"
+                        android:padding="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight=".7"
+                            android:id="@+id/tv_nature"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotothin"
+                            android:text="Nature of Image   = "
+                            android:textColor="@color/white"
+                            android:textSize="16sp">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:minWidth="150dp"
+                                android:backgroundTint="@color/yelloprange"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinner1"/>
+                            <View
+                                android:layout_width="150dp"
+                                android:layout_height="1dp"
+                                android:background="@color/Yellow"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight=".1"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/iv_tick3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_tick"/>
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/iv_cross3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_cross"/>
+                        </LinearLayout>
+                        <EditText
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/Yellow"
+                            android:fontFamily="@font/robotolight"
+                            android:paddingLeft="15dp"
+                            android:text="= Concave"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rellSupSup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+
+                android:background="@color/White">
+
+                <EditText
+                    android:id="@+id/et_value2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/tv_sub"
+                    android:backgroundTint="@color/White"
+                    android:fontFamily="@font/robotothin"
+                    android:imeOptions="actionNext"
+                    android:text="fgh"
+                    android:gravity="center"
+                    android:textColor="@color/greenText"
+                    android:textCursorDrawable="@null" />
+                <TextView
+                    android:id="@+id/tv_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  Sub    "
+                    android:background="@color/White"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:fontFamily="@font/robotothin"
+                    android:layout_toLeftOf="@id/tv_sup"
+                    android:textColor="@color/greenText"/>
+                <TextView
+                    android:id="@+id/tv_sup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  Sup   "
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@color/White"
+                    android:fontFamily="@font/robotothin"
+                    android:layout_toLeftOf="@id/tv_Done"
+                    android:textColor="@color/greenText"/>
+                <TextView
+                    android:id="@+id/tv_Done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=" Done "
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@color/White"
+                    android:fontFamily="@font/robotothin"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/greenText"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/navicolor"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/tv_sereas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="A"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"></TextView>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="6dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/iv_image"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="2dp"
+                android:src="@drawable/profile"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="-4dp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/cardNumber"
+                app:cardBackgroundColor="@color/white">
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="11dp"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:background="@drawable/background_pinklight"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/cardnumber2"
+                android:layout_centerHorizontal="true"
+
+                android:layout_alignBottom="@id/iv_image"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/tv_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="95%"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="12dp"
+
+                    android:fontFamily="@font/ceraprobold"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardimage"
+        android:fontFamily="@font/ceraprolight"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Nikita"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+</RelativeLayout>

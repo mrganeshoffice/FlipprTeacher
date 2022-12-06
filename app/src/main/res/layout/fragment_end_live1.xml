@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:background="@color/white"
+            android:clickable="false"
+            >
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Newton’s 1st law of motion"
+                android:fontFamily="@font/ceraprolight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/endLive_levels_textSize"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toStartOf="@id/guideVerticle_50"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Newton’s 1st law of motion"
+                android:fontFamily="@font/ceraprobold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/endLive_levels_textSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideVerticle_50"
+                />
+
+            <LinearLayout
+                android:id="@+id/llheader1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@id/guideVerticle_50"
+                app:layout_constraintEnd_toEndOf="@id/guideVerticle_50"
+                app:layout_constraintTop_toBottomOf="@id/tv1">
+                <TextView
+                    android:id="@+id/tv_skills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Memory, Skill "
+                    android:fontFamily="@font/ceraprobold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/endLive_levels_textSize"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/guideVerticle_50"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/sky_blue_1DAFC6"/>
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Level"
+                    android:fontFamily="@font/ceraprolight"
+                    android:textSize="@dimen/endLive_levels_textSize"
+                    />
+                <TextView
+                    android:id="@+id/tvLevels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text=" 1,2,3"
+                    android:fontFamily="@font/ceraprobold"
+                    android:textSize="@dimen/endLive_levels_textSize"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/sky_blue_1DAFC6"/>
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="14"
+                    android:fontFamily="@font/ceraprobold"
+                    android:textSize="@dimen/endLive_levels_textSize"
+                    />
+                <TextView
+                    android:id="@+id/tvQuestions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Questions"
+                    android:fontFamily="@font/ceraprolight"
+                    android:textSize="@dimen/endLive_levels_textSize"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvParticipantsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s26"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ceraprobold"
+                android:textColor="@color/black"
+                android:text="18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llheader1"
+                app:layout_constraintEnd_toStartOf="@id/tvScoreValue"
+                app:layout_constraintEnd_toEndOf="@id/guideVerticle_50"/>
+            <TextView
+                android:id="@+id/tvParticipants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ceraprolight"
+                android:textSize="@dimen/s12"
+                android:layout_marginTop="1dp"
+                android:text=" avg score"
+                app:layout_constraintTop_toBottomOf="@id/tvParticipantsValue"
+                app:layout_constraintStart_toStartOf="@id/tvParticipantsValue"
+                app:layout_constraintEnd_toEndOf="@id/tvParticipantsValue"/>
+
+
+            <TextView
+                android:id="@+id/tvScoreValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s26"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ceraprobold"
+                android:textColor="@color/black"
+                android:text="74"
+                app:layout_constraintTop_toBottomOf="@id/llheader1"
+                app:layout_constraintStart_toStartOf="@id/guideVerticle_50"
+                app:layout_constraintEnd_toEndOf="@id/guideVerticle_50"/>
+            <TextView
+                android:id="@+id/tvpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s16"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ceraprolight"
+                android:textColor="@color/black"
+                android:text="%"
+                app:layout_constraintStart_toEndOf="@id/tvScoreValue"
+                app:layout_constraintBottom_toBottomOf="@id/tvScoreValue"/>
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ceraprolight"
+                android:textSize="@dimen/s12"
+                android:layout_marginTop="1dp"
+                android:text=" avg score"
+                app:layout_constraintTop_toBottomOf="@id/tvScoreValue"
+                app:layout_constraintStart_toStartOf="@id/tvScoreValue"
+                app:layout_constraintEnd_toEndOf="@id/tvScoreValue"/>
+
+            <TextView
+                android:id="@+id/tv_avg_confidenceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s26"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ceraprobold"
+                android:textColor="@color/black"
+                android:text="56"
+                app:layout_constraintTop_toBottomOf="@id/llheader1"
+                app:layout_constraintStart_toEndOf="@id/guideVerticle_50"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/tvpercent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s16"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ceraprolight"
+                android:textColor="@color/black"
+                android:text="%"
+                app:layout_constraintStart_toEndOf="@id/tv_avg_confidenceValue"
+                app:layout_constraintBottom_toBottomOf="@id/tv_avg_confidenceValue"/>
+
+            <TextView
+                android:id="@+id/tv_avg_confidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ceraprolight"
+                android:textSize="@dimen/s12"
+                android:layout_marginTop="1dp"
+                android:text="avg confidence"
+                app:layout_constraintTop_toBottomOf="@id/tv_avg_confidenceValue"
+                app:layout_constraintStart_toStartOf="@id/tv_avg_confidenceValue"
+                app:layout_constraintEnd_toEndOf="@id/tv_avg_confidenceValue"/>
+
+            <TextView
+                android:id="@+id/tv_overallScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ceraprolight"
+                android:textSize="@dimen/s14"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="8dp"
+                android:text="Overall Top Scores"
+                app:layout_constraintTop_toBottomOf="@id/tvScore"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_highLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/ceraprolight"
+                android:text="high → low"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvScore" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/greenText"
+                app:layout_constraintStart_toStartOf="@id/tv_highLow"
+                app:layout_constraintEnd_toEndOf="@id/tv_highLow"
+                app:layout_constraintTop_toBottomOf="@id/tv_highLow"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOverAllScores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_margin="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_overallScore"/>
+
+            <include
+                android:id="@+id/inc_end"
+                layout="@layout/end_live_question_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvOverAllScores" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent=".5"
+                android:orientation="vertical"
+                android:id="@+id/guideVerticle_50"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

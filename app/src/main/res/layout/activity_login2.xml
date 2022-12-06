@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight=".40">
+                    <ImageView
+                        android:padding="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        app:tint="@color/skyblue_text_color"
+                        android:src="@drawable/flipprlogo"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight=".60">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl_login"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <!--            login view-->
+                        <RelativeLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rl_loginview">
+                            <LinearLayout
+                                android:id="@+id/llmobilenumber"
+                                android:layout_width="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_boundary_white"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:weightSum="1">
+                                <TextView
+                                    android:id="@+id/tvCountryCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight=".25"
+                                    android:layout_height="match_parent"
+                                    android:text="+91"
+                                    android:padding="10dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/cerapromedium"
+                                    android:layout_marginBottom="3dp"
+                                    android:gravity="center" />
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/colordivide"/>
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight=".75"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/white"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="phone"
+                                    android:paddingRight="5dp"
+                                    android:maxLength="10"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="-2dp"
+                                    android:fontFamily="@font/cerapromedium"
+                                    android:backgroundTint="@color/transparent"
+                                    android:hint="Enter your mobile number"
+                                    android:textColorHint="@color/white"
+                                    android:gravity="center_vertical"
+
+                                    android:id="@+id/et_mobilenumber"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:background="@drawable/button_border"
+                                android:layout_below="@+id/llmobilenumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="25dp"
+                                android:orientation="horizontal">
+                                <ProgressBar
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:id="@+id/progress"
+                                    android:visibility="gone"
+                                    android:indeterminateTint="@color/navicolor"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="45dp"
+                                    android:text="Login with OTP"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/robotobold"
+                                    android:gravity="center"
+                                    android:paddingLeft="12dp"
+
+                                    android:textSize="20dp"
+                                    android:paddingRight="12dp"
+                                    android:id="@+id/tv_loginOtp"/>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--            otp view-->
+
+                        <RelativeLayout
+                            android:id="@+id/rl_otp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_edit_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/llCHangenumber"
+                                android:background="@drawable/round_boundary_white_new"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_edit" />
+
+                            <LinearLayout
+                                android:id="@+id/llCHangenumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_edit_number"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginBottom="4dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_changenumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+
+                                    android:fontFamily="@font/cerapromedium"
+                                    android:gravity="center"
+                                    android:text="@string/sms_sent_to"
+                                    android:textColor="@color/navicolor_light"
+                                    android:textSize="@dimen/s16"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/parrotgreen"
+                                    android:visibility="invisible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llotp"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/llCHangenumber"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="55dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="55dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/round_boundary_white"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <EditText
+                                    android:id="@+id/et_otp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="@color/transparent"
+                                    android:fontFamily="@font/cerapromedium"
+                                    android:gravity="center"
+                                    android:hint="Enter OTP"
+                                    android:inputType="number"
+                                    android:maxLength="6"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white"
+                                    android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/rlresendotp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/llotp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="25dp"
+                                android:background="@drawable/button_border"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ProgressBar
+                                    android:id="@+id/progressotp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:indeterminateTint="@color/navicolor"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/tv_resendotp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="42dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/robotobold"
+                                    android:gravity="center"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Resend OTP"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <TextView
+
+                                    android:id="@+id/tv_verify"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="42dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/robotobold"
+                                    android:gravity="center"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Verify"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/tv_timer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rlresendotp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="in 00:59"
+                                android:textColor="@color/navicolor_light"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height=".9dp"
+                        android:background="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@+id/rl_login"
+                        android:id="@+id/view"/>
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/navicolor_light"
+                        android:text="@string/by_signing_up_for_flipper_you_a"
+                        android:fontFamily="@font/ceraprolight"
+                        android:layout_below="@+id/view"
+                        android:gravity="center|bottom"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="10dp"
+                        android:textSize="15dp"
+                        android:paddingRight="10dp"
+                        android:textColorLink="@color/navicolor"
+                        android:linksClickable="true"
+                        android:id="@+id/tv_tems"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>

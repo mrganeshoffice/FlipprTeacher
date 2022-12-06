@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Flippr Teacher</string>
+    <string name="home">Home</string>
+    <string name="report">Reports</string>
+    <string name="challange">Challange</string>
+    <string name="see_all">See all</string>
+    <string name="school_code">School Code</string>
+    <string name="done">Done</string>
+    <string name="this_will_activate_your_break_time_exit">This will activate your break time.Exit?</string>
+    <string name="continue_session">Continue Session</string>
+    <string name="pause_now">Pause Now</string>
+    <string-array name="type_mr">
+        <item>Mr.</item>
+        <item>Mrs</item>
+        <item>Ms.</item>
+    </string-array>
+    <string-array name="chooseClass">
+        <item>Add Class</item>
+    </string-array>
+    <string-array name="type">
+        <item>Grade</item>
+    </string-array>
+    <string-array name="type1">
+        <item>Subject</item>
+    </string-array>
+    <string name="sms_sent_to">SMS sent to  %1$s %2$s</string>
+    <string name="by_signing_up_for_flipper_you_a">By signing up for flipper you agree to our <a href="https://flippr.in/privacypolicy.php">Terms of services</a>. Learn about how we process and use your data in <a href="https://flippr.in/privacypolicy.php">Privacy Policy</a> and how we use cookies and similar technology in our Cookies Policy</string>
+
+    <string name="start">Start</string>
+    <string name="your_account_code">Your Account Code: </string>
+    <string name="mark_complete_amp_give_as_hw"><![CDATA[Mark complete & give as HW]]></string>
+    <string name="go_live">Go LIVE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="_15_min_78_questions">%s min | %s questions</string>
+    <string name="selected_">%s Selected</string>
+    <string name="_participants">%s Participants</string>
+    <string name="collectionName">Rooms</string>
+    <string name="live_class_code">LIVE class code</string>
+    <string name="high_low">high → low</string>
+    <string name="low_high">low → high</string>
+    <string name="syllabus_mastered">Syllabus Mastered</string>
+    <string name="class_performance_in_physics">Class Performance in %1$s</string>
+    <string name="class_performance_in">Class Performance</string>
+    <string name="syllabus">syllabus</string>
+    <string name="correct_attempt">Correct Attempted By</string>
+    <string name="wrong_attempt">Wrong Attempted By</string>
+    <string name="not_attempt">Unattempted By</string>
+    <string name="add_more_class">Add More Class</string>
+</resources>

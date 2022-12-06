@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rlcard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:id="@+id/cardImage"
+            android:layout_marginLeft="7dp"
+            app:cardCornerRadius="3dp"
+            app:cardBackgroundColor="@color/navicolor_light">
+
+            <ImageView
+                android:id="@+id/iv_topicImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/sample_image"/>
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/llStatus"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#efaf32"
+            android:elevation="5dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_chapterStatus"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:fontFamily="@font/ceraprobold"
+                android:gravity="center"
+                android:text="N"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s16"
+                />
+
+            <TextView
+                android:id="@+id/tv_chaptername"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:fontFamily="@font/ceraprobold"
+                android:gravity="center"
+                android:text="Topic"
+                android:textSize="6sp"
+                android:visibility="gone"
+                android:background="@drawable/gradient_blue_trans_title"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="22dp"
+        android:minWidth="22dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/circle_white"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="10dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rlcard"
+        android:layout_alignBottom="@id/rlcard"
+        android:minHeight="130dp"
+        android:layout_marginLeft="10dp"
+
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+         >
+
+        <TextView
+            android:id="@+id/tv_subjectTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Physics: Motion"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_subjectTopic"
+            android:text="@string/_15_min_78_questions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s14"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/cerapromedium"
+            android:id="@+id/tv_topicn_mins"/>
+        <TextView
+            android:id="@+id/tv_statusTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_topicn_mins"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_live"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/tv_statusTo"
+            android:background="@drawable/button_border_live"
+            android:fontFamily="@font/cerapromedium"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/go_live"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s18" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relText"
+        android:layout_alignStart="@id/relText"
+        android:layout_alignEnd="@id/relText"
+        android:layout_marginTop="-25dp"
+        android:orientation="vertical">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_subjectTopic"
+            android:text="@string/mark_complete_amp_give_as_hw"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s14"
+            android:button="@drawable/checked_unchecked_box"
+
+            android:drawablePadding="10dp"
+            android:paddingStart="4dp"
+            android:fontFamily="@font/ceraprobold"
+            android:id="@+id/cbx" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@id/rlcard"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/navicolor"/>
+</RelativeLayout>

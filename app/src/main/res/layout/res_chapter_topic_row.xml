@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:id="@+id/reMain"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_participants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/ceraprolight"
+        android:gravity="center"
+        android:text="Ongoing in class"
+        android:textColor="@color/black"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:layout_below="@+id/tv_participants"
+        android:layout_width="115dp"
+        android:layout_height="170dp"
+        android:background="@color/navicolor_light"
+        android:id="@+id/iv_topicImage"/>
+
+
+    <LinearLayout
+        android:id="@+id/llStatus"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+         android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/tv_participants"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_chapterStatus"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:fontFamily="@font/ceraprobold"
+            android:gravity="center"
+            android:text="O"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_chaptername"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:fontFamily="@font/ceraprobold"
+            android:gravity="center"
+            android:text="Topic"
+            android:textColor="@color/black"
+            android:textSize="6sp"
+            android:visibility="gone"
+            android:background="@drawable/gradient_blue_trans_title"/>
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:thumbTint="#0000"
+        android:progressDrawable="@drawable/background_custom"
+        android:progress="50"/>
+
+    <TextView
+        android:id="@+id/tv_Duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_topicImage"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/ceraprolight"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="11dp" />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_marginTop="218dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:indeterminate="true"
+
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressTint="@color/OrangeRed"
+        android:progress="50"
+        android:indeterminateOnly="true"
+        android:secondaryProgressTint="#f23555"
+        android:progressBackgroundTint="@color/progress_color"
+        android:progressBackgroundTintMode="multiply"/>
+</RelativeLayout>

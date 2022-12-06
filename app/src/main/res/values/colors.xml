@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+        <color name="colorPrimary">#3069C5</color>
+        <color name="colorPrimaryDark">#010101</color>
+        <color name="colorAccent">#010101</color>
+        <color name="black">#010101</color>
+
+        <color name="navicolor">#032330</color>
+        <color name="navicolor_4">#03414b</color>
+        <color name="navicolor_3">#030d28</color>
+        <color name="navicolor_2">#220428</color>
+        <color name="navicolor_bg">#042632</color>
+        <color name="navicolor_light">#9A053F57</color>
+        <color name="navicolor_light_edittext">#94053F57</color>
+        <color name="navicolor_light_dailog">#E4053F57</color>
+        <color name="headercolor">#03314b</color>
+        <color name="white">#FFFFFF</color>
+        <color name="white_progfile">#DDCFC9C9</color>
+        <color name="yellow">#FAFF00</color>
+        <color name="transparent">#00FFFF00</color>
+        <color name="colordivider">#aaaaaa</color>
+        <color name="skyblue">#3FA9F8</color>
+
+        <color name="puple">#2A2735</color>
+        <color name="black_other">#1B1C20</color>
+        <color name="darkshyblue">#4A84F1</color>
+        <color name="replycolor">#304A7C</color>
+        <color name="parrotgreen">#26e67a</color>
+        <color name="green_botom">#26e67a</color>
+        <color name="greenText">#1AAC5A</color>
+        <color name="colordivide">#aaaaaa</color>
+        <color name="DarkGray">#9E9D9D</color>
+        <color name="DarkGray1">#7C7B7B</color>
+        <color name="DarkGray2">#616161</color>
+        <color name="revise">#0987c7</color>
+        <color name="boost">#d14e1a</color>
+        <color name="Coral">#FF7F50</color>
+        <color name="HotPink">#E790BD</color>
+        <color name="Tomato">#FF6347</color>
+        <color name="OrangeRed">#FF4500</color>
+        <color name="DeepPink">#FF1493</color>
+        <color name="copyPink">#F23555</color>
+        <color name="White">#FAFFFFFF</color>
+        <color name="progress_color">#1DAFC6</color>
+        <color name="Black">#000000</color>
+        <color name="litGray">#DFDFDF</color>
+        <color name="Yellow">#faab32</color>
+        <color name="litered">#f23555</color>
+        <color name="purplehome">#2F3145</color>
+        <color name="yelloprange">#EE6C29</color>
+        <color name="testColor">#E6000000</color>
+        <color name="boost_purple_bg">#380842</color>
+        <color name="toolbar_purple_bg">#220328</color>
+        <color name="boost_second_bg">#0e1d32</color>
+
+        <color name="revise_blue1_bg">#04143e</color>
+        <color name="revise_blue2_bg">#042035</color>
+        <color name="toolbar_revise_bg">#030d28</color>
+        <color name="learn">#f23555</color>
+        <color name="yellow_selected">#F8AD34</color>
+
+
+    <color name="brodcast_black">#5D5C5C</color>
+    <color name="adapter_black">#B9B9B9</color>
+    <color name="adapter_text">#5D5C5C</color>
+    <color name="live_broadcast_white">#D8D8D8</color>
+
+    <color name="skyblue_sort">#08B9C4</color>
+    <color name="grey_light_gradient_home_color">#8A000000</color>
+    <color name="skyblue_text_color">#1dafc5</color>
+    <color name="black_text_color">#032330</color>
+    <color name="sky_blue_1DAFC6">#1DAFC6</color>
+    <color name="wrong_red_color">#F23555</color>
+    <color name="grey">#a1a3ac</color>
+    <color name="bottom_back">#355763</color>
+
+    <color name="profile_yellow">#efaf32</color>
+</resources>

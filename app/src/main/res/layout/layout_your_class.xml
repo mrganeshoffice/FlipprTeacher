@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:paddingBottom="@dimen/s4"
+    android:paddingTop="@dimen/s8"
+    android:background="@drawable/gradient_background">
+    <TextView
+        android:id="@+id/tv_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cerapromedium"
+        android:paddingTop="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="@dimen/s16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvChapterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ceraprolight"
+        android:layout_marginTop="@dimen/margin_top_2d"
+        android:paddingStart="10dp"
+
+        android:paddingBottom="10dp"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="@dimen/s10"
+        app:layout_constraintStart_toStartOf="@+id/tv_class"
+        app:layout_constraintTop_toBottomOf="@+id/tv_class" />
+
+    <TextView
+        android:id="@+id/tvAvergPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/ceraprobold"
+        android:paddingTop="3dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/s16"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_class"
+        app:layout_constraintEnd_toStartOf="@id/tv_p" />
+
+    <TextView
+        android:id="@+id/tv_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/ceraprobold"
+        android:paddingTop="3dp"
+
+        android:text="op"
+        android:textColor="@color/navicolor"
+        android:textSize="@dimen/s18"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAvergPoints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ceraprolight"
+        android:layout_marginTop="@dimen/margin_top_2d"
+        android:text="Average Points"
+        android:paddingStart="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/s10"
+        app:layout_constraintEnd_toEndOf="@+id/tv_p"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvergPoints" />
+
+    <ProgressBar
+        android:id="@+id/seekBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10dp"
+        android:progressDrawable="@drawable/background_custom_progress_horizontal"
+        android:progress="50"
+        android:max="100"
+        android:scrollbarTrackHorizontal="@color/navicolor"
+        app:layout_constraintStart_toStartOf="@+id/tvChapterName"
+        app:layout_constraintTop_toTopOf="@id/guideH_50"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ceraprobold"
+                android:text="92%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/cerapromedium"
+                 android:layout_marginTop="@dimen/margin_top"
+                android:text="homework"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_class"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ceraprolight"
+                android:text="completed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_class"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSyllabus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ceraprobold"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top"
+                android:fontFamily="@font/cerapromedium"
+                android:text="syllabus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_class"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ceraprolight"
+                android:text="completed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_class"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvConfidenc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ceraprobold"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/cerapromedium"
+                android:text="confidence"
+                android:layout_marginTop="@dimen/margin_top"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_class"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ceraprolight"
+                android:text="class avg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_class"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4"
+        android:id="@+id/guideH_50"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

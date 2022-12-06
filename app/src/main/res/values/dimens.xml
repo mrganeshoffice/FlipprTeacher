@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="see_all_text_size">14sp</dimen>
+    <dimen name="sortby_text_size">11.5sp</dimen>
+    <dimen name="margin_top_home_grey_headr">20dp</dimen>
+    <dimen name="s2">2sp</dimen>
+    <dimen name="s4">4sp</dimen>
+    <dimen name="s6">6sp</dimen>
+    <dimen name="s8">8sp</dimen>
+    <dimen name="s10">10sp</dimen>
+    <dimen name="s12">12sp</dimen>
+    <dimen name="s14">14sp</dimen>
+    <dimen name="s16">16sp</dimen>
+    <dimen name="s17">17sp</dimen>
+    <dimen name="s18">18sp</dimen>
+    <dimen name="x50">50sp</dimen>
+    <dimen name="dp35">35sp</dimen>
+    <dimen name="x4">4sp</dimen>
+    <dimen name="x40">40sp</dimen>
+    <dimen name="x100">100sp</dimen>
+    <dimen name="s20">20sp</dimen>
+    <dimen name="s24">24sp</dimen>
+    <dimen name="s26">26sp</dimen>
+    <dimen name="s28">28sp</dimen>
+    <dimen name="s22">22sp</dimen>
+    <dimen name="x8">8dp</dimen>
+    <dimen name="x60">60sp</dimen>
+    <dimen name="x30">30sp</dimen>
+
+    <dimen name="x200">200sp</dimen>
+    <dimen name="x250">250sp</dimen>
+    <dimen name="Toolbar_title_size">22sp</dimen>
+    <dimen name="margin_top">2dp</dimen>
+    <dimen name="margin_top_2d">2dp</dimen>
+    <dimen name="top_green_dots_margin_left">20dp</dimen>
+    <dimen name="endLive_levels_textSize">11sp</dimen>
+
+    <dimen name="boxWidth">95dp</dimen>
+    <dimen name="boxHeight">95dp</dimen>
+</resources>

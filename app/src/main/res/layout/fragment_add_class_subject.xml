@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_more_class"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_top_2d"
+                android:layout_marginTop="@dimen/s10"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="School Code"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center">
+
+                <com.mukesh.OtpView
+                    android:id="@+id/otp_view"
+                    style="@style/OtpWidget.OtpView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:itemBackground="@drawable/otp_border_navcolor"
+                    android:textColor="@color/navicolor"
+                    app:OtpCursorColor="@color/white"
+                    app:OtpItemCount="5"
+                    app:OtpItemHeight="@dimen/x40"
+                    app:OtpItemWidth="@dimen/x40" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSchoolName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2sp"
+                android:fontFamily="@font/ceraprolight"
+                android:text=""
+                android:textColor="@color/sky_blue_1DAFC6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llGrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.3"
+                    android:background="@drawable/round_boundary_navi"
+                    android:backgroundTint="@color/skyblue_text_color"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        style="?android:attr/spinnerItemStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".4"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/ceraprobold"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="xx"
+                        android:textAlignment="inherit"
+                        android:textColor="@color/parrotgreen"
+                        android:textSize="@dimen/s18"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="#05334C"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spinner_grade"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight=".6"
+                        android:backgroundTint="@color/skyblue_text_color"
+                        android:entries="@array/type" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_boundary_navi"
+                    android:backgroundTint="@color/skyblue_text_color"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_subject"
+                        style="?android:attr/spinnerItemStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".4"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/ceraprobold"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="xx"
+                        android:textAlignment="inherit"
+                        android:textColor="@color/parrotgreen"
+                        android:textSize="@dimen/s18"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="#05334C"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spinner_subject"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight=".6"
+                        android:backgroundTint="@color/skyblue_text_color"
+                        android:entries="@array/type1" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivAddSubject"
+                    android:layout_width="60dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_add_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ceraprobold"
+                    android:text="Grade"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ceraprobold"
+                    android:text="Subject"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvGradeSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:minHeight="50dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/progress_color"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/saveSubjectsClasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_border"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</layout>

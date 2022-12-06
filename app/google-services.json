@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "223594002541",
+    "project_id": "flippr-45be9",
+    "storage_bucket": "flippr-45be9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223594002541:android:6e0ae80ae7de97b9a0e764",
+        "android_client_info": {
+          "package_name": "com.app.flippr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223594002541-5rb8hl273s629na4mgn3ndgtg7qbrbdg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.flippr",
+            "certificate_hash": "aa40903eb7972afa1b61fbf261ffca40d70a6283"
+          }
+        },
+        {
+          "client_id": "223594002541-n3kscbjo5dheumt8k3ik343heik3169b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdA-PNUpOQKyr0MvGQfJeKAncB41PUt3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223594002541-n3kscbjo5dheumt8k3ik343heik3169b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "223594002541-1g9url9ktau0rhr0mfh9jjo6daij979u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.edzok.Flippr-Parent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223594002541:android:c5f4766943a2edcda0e764",
+        "android_client_info": {
+          "package_name": "com.app.flipprteachear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223594002541-3gq45u9uuc58rqgbfj7ee189qt4j7ohu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.flipprteachear",
+            "certificate_hash": "28e9178ca237169bbe6834c602fee146cfcb1505"
+          }
+        },
+        {
+          "client_id": "223594002541-n3kscbjo5dheumt8k3ik343heik3169b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdA-PNUpOQKyr0MvGQfJeKAncB41PUt3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223594002541-n3kscbjo5dheumt8k3ik343heik3169b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "223594002541-1g9url9ktau0rhr0mfh9jjo6daij979u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.edzok.Flippr-Parent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

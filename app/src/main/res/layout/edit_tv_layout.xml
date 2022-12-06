@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLay">
+
+    <EditText
+        android:id="@+id/idicatorView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:focusable="false"
+        android:background="@drawable/border1"
+
+        android:inputType="none"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/idicatorView">
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/border1"
+             android:backgroundTint="@color/black"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:maxLength="50"
+            android:maxLines="3"
+            android:maxWidth="150dp"
+            android:minWidth="60dp"
+            android:textSize="15sp"
+            android:hint="Ans"
+            android:textColorHint="@color/white"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_cross"
+            android:id="@+id/ic_cancel"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_tick"
+            android:id="@+id/ic_right"
+            android:visibility="gone"
+            android:layout_marginRight="2dp"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

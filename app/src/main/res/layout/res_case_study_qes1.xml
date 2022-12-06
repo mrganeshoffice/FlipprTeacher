@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        >
+        <RelativeLayout
+            android:id="@+id/relMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+            <LinearLayout
+                android:id="@+id/Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_boundary_navi"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/neutonregular"
+                    android:padding="20dp"
+                    android:text=" g fdgfndfnmndfnfdmhnmfdnhmfdnmfdn"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <katex.hourglass.in.mathlib.MathView
+                    android:id="@+id/formula_one1_res"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="4dp"
+                    app:setTextColor="@color/navicolor"
+                    android:fontFamily="@font/ceraprobold"
+
+                    android:padding="20dp"
+
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewIMage"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="8dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_white"
+                        android:contentDescription="@string/app_name"
+                        android:visibility="visible" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardoption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/navicolor">
+                <TextView
+                    android:id="@+id/tv_sereas_res"
+                    android:gravity="center"
+                    android:fontFamily="@font/neutonregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="Case">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/relMain"
+            android:id="@+id/cardReadMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="-32dp"
+            android:layout_alignParentRight="true"
+            app:cardBackgroundColor="@color/navicolor">
+            <TextView
+                android:id="@+id/tvReadMore"
+                android:gravity="center"
+                android:fontFamily="@font/neutonregular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="ReadMore">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_below="@id/relMain"
+            android:id="@+id/relMain_asrtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:id="@+id/Card_asrtion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_boundary_navi"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <katex.hourglass.in.mathlib.MathView
+                    android:id="@+id/formula_one1_res_asrtion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/ceraprobold"
+                    app:setTextColor="@color/navicolor"
+                    android:padding="20dp"
+
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewIMage_asrtion"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="8dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_image_asrtion"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:background="@drawable/round_white"
+                        android:contentDescription="@string/app_name"
+                        android:visibility="visible" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardoption_asrtion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/navicolor">
+                <TextView
+                    android:id="@+id/tv_sereas_res_asrtion"
+                    android:gravity="center"
+                    android:fontFamily="@font/neutonregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="Case">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_below="@id/relMain"
+            />
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FlipprTeachear" parent="Theme.Design.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SpinnerTheme3">
+        <item name="android:fontFamily">@font/ceraprolight</item>
+        <item name="android:textSize">@dimen/s16</item>
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="SpinnerTheme4">
+        <item name="android:fontFamily">@font/ceraprobold</item>
+        <item name="android:textSize">@dimen/s20</item>
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+</resources>

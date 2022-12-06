@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="6dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:id="@+id/iv_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginLeft="-3dp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/cardNumber"
+                app:cardBackgroundColor="@color/white">
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="11dp"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardimage"
+        android:fontFamily="@font/ceraprolight"
+        android:textColor="@color/black"
+        android:text="Raani"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:padding="2dp"/>
+
+</RelativeLayout>

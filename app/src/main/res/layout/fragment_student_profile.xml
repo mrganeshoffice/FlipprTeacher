@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rlInfoHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:id="@+id/rlImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            >
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="160dp"
+                                    android:gravity="right|bottom"
+                                    android:layout_weight=".65">
+                                    <RelativeLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/rlInfo"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_toRightOf="@+id/rlImage"
+                                        android:layout_marginLeft="30dp">
+
+                                        <TextView
+                                            android:id="@+id/tv_firstname"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="right"
+                                            android:text=""
+                                            android:textColor="@color/navicolor"
+                                            android:textSize="25sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_lastname"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tv_firstname"
+                                            android:gravity="right"
+                                            android:fontFamily="@font/ceraproregularitalic"
+                                            android:text=""
+                                            android:textSize="25sp"
+                                            android:textColor="@color/navicolor" />
+
+                                        <TextView
+                                            android:id="@+id/tv_description"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tv_lastname"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:fontFamily="@font/ceraprolight"
+                                            android:gravity="right"
+                                            android:text="Your one line description goes here..."
+                                            android:textColor="@color/navicolor"
+                                            android:textSize="13sp" />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".35">
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:src="@drawable/image"
+                                        android:id="@+id/ic_userimage"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rvStudentDetail"
+                        android:layout_below="@+id/rlInfoHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@color/white"
+                            android:elevation="1dp"
+                            android:fontFamily="@font/cerapromedium"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="In Physics"
+                            android:textColor="@color/sky_blue_1DAFC6"
+                            android:textSize="15sp" />
+
+                        <HorizontalScrollView
+                            android:id="@+id/hvStudentDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+
+                            android:scrollbars="none">
+
+                            <!--    <LinearLayout
+                                    android:id="@+id/llStudentDetail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/round_white_boundary"
+                                    android:orientation="horizontal"
+                                    android:padding="8dp">
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/boxWidth"
+                                        android:layout_height="@dimen/boxHeight"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_total_time"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="@color/Yellow"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotomiedium"
+                                            android:gravity="center"
+                                            android:text="hours\nCompleted"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:background="@color/headercolor" />
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/boxWidth"
+                                        android:layout_height="@dimen/boxHeight"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_homework"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="@color/Yellow"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotomiedium"
+                                            android:gravity="center"
+                                            android:text="hours\nCompleted"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:background="@color/headercolor" />
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/boxWidth"
+                                        android:layout_height="@dimen/boxHeight"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_total_point"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="@color/Yellow"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotomiedium"
+                                            android:gravity="center"
+                                            android:text="points\nCompleted"
+                                            android:textColor="@color/white"
+                                            android:textSize="13dp" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:background="@color/headercolor" />
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/boxWidth"
+                                        android:layout_height="@dimen/boxHeight"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_syllabus"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="@color/Yellow"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotomiedium"
+                                            android:gravity="center"
+                                            android:text="syllabus\nCompleted"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:background="@color/headercolor" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/boxWidth"
+                                        android:layout_height="@dimen/boxHeight"
+                                        android:orientation="vertical"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:id="@+id/tv_syllabusMaster"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="@color/Yellow"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotomiedium"
+                                            android:gravity="center"
+                                            android:text="syllabus\nMastered"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+                                        &lt;!&ndash; <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotothin"
+                                            android:gravity="center"
+                                            android:text="Mastered"
+                                            android:textColor="@color/white"
+                                            android:textSize="11sp" />&ndash;&gt;
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:background="@color/headercolor"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/boxWidth"
+                                        android:layout_height="@dimen/boxHeight"
+                                        android:orientation="vertical"
+                                        android:visibility="gone"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:id="@+id/tv_avg_config"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="@color/Yellow"
+                                            android:textSize="20dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotomiedium"
+                                            android:gravity="center"
+                                            android:text="confidence\nlevel"
+                                            android:textColor="@color/white"
+                                            android:textSize="13dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/boxWidth"
+                                        android:layout_height="@dimen/boxHeight"
+                                        android:orientation="vertical"
+                                        android:visibility="gone"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotobold"
+                                            android:gravity="center"
+                                            android:text="92%"
+                                            android:textColor="@color/Yellow"
+                                            android:textSize="20dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/robotomiedium"
+                                            android:gravity="center"
+                                            android:text="grit\nlevel"
+                                            android:textColor="@color/white"
+                                            android:textSize="13dp" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>-->
+
+                            <LinearLayout
+                                android:id="@+id/llStudentDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_boundary_navi_new"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/boxWidth"
+                                    android:layout_height="@dimen/boxHeight"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_total_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center"
+                                        android:text="0.0"
+                                        android:textColor="@color/Yellow"
+                                        android:textSize="21sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cerapromedium"
+                                        android:gravity="center"
+                                        android:text="hours "
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotothin"
+                                        android:gravity="center"
+                                        android:text="Completed"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/headercolor" />
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/boxWidth"
+                                    android:layout_height="@dimen/boxHeight"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_homework"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/Yellow"
+                                        android:textSize="21sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cerapromedium"
+                                        android:gravity="center"
+                                        android:text="homework"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotothin"
+                                        android:gravity="center"
+                                        android:text="Completed"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/headercolor" />
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/boxWidth"
+                                    android:layout_height="@dimen/boxHeight"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_total_point"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/Yellow"
+                                        android:textSize="21sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cerapromedium"
+                                        android:gravity="center"
+                                        android:text="points"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotothin"
+                                        android:gravity="center"
+                                        android:text="Completed"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/headercolor" />
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/boxWidth"
+                                    android:layout_height="@dimen/boxHeight"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_syllabus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/Yellow"
+                                        android:textSize="21sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cerapromedium"
+                                        android:gravity="center"
+                                        android:text="syllabus"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotothin"
+                                        android:gravity="center"
+                                        android:text="Completed"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <View
+
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/headercolor" />
+
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/boxWidth"
+                                    android:layout_height="@dimen/boxHeight"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_syllabusMaster"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/Yellow"
+                                        android:textSize="21sp" />
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cerapromedium"
+                                        android:gravity="center"
+                                        android:text="syllabus"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotothin"
+                                        android:gravity="center"
+                                        android:text="Mastered"
+                                        android:textColor="@color/navicolor"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/headercolor"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/boxWidth"
+                                    android:layout_height="@dimen/boxHeight"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/tv_avg_config"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/Yellow"
+                                        android:textSize="21sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cerapromedium"
+                                        android:gravity="center"
+                                        android:text="confidence"
+                                        android:textColor="@color/white"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotothin"
+                                        android:gravity="center"
+                                        android:text="Level"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/headercolor"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/boxWidth"
+                                    android:layout_height="@dimen/boxHeight"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center"
+                                        android:text="92%"
+                                        android:textColor="@color/Yellow"
+                                        android:textSize="20dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotomiedium"
+                                        android:gravity="center"
+                                        android:text="grit\nlevel"
+                                        android:textColor="@color/white"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_below="@+id/rvStudentDetail"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_topics"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <!--                backbutton-->
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/llBack"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left">
+
+                        <ImageView
+                            android:id="@+id/Back"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_arrows_green"
+                            app:tint="@color/sky_blue_1DAFC6" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </ScrollView>
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/progress_color"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>
