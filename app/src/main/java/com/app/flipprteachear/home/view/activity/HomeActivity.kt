@@ -222,11 +222,6 @@ class HomeActivity : AppCompatActivity(), ForStartLive, AllMcq_Fragment.OnDiagra
         }catch (ex :Exception){ (ex.printStackTrace())}
     }
 
-    fun testCheck() {
-
-    }
-
-
     override fun startLive(s: String, bundle: Bundle) {
         with(viewBinding) {
             rlHeader.visibility = View.GONE
