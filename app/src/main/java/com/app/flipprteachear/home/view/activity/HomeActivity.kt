@@ -17,6 +17,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -177,7 +178,7 @@ class HomeActivity : AppCompatActivity(), ForStartLive, AllMcq_Fragment.OnDiagra
 
     fun homepage() {
         val ft = supportFragmentManager.beginTransaction()
-        replacefrag_noBackStack(ft, HomeFragment(), Bundle(),"home" )
+        replacefrag_withBackStack(ft, HomeFragment(), Bundle(),"home" );
         // replacefrag_withBackStack(ft, LiveFragment(), Bundle(),"home" )
        // replacefrag_withBackStack(ft, TopicListFragment(), Bundle(),"home" )
        // replacefrag_withBackStack(ft, EndLive1Fragment(), Bundle(),"home" )
@@ -219,6 +220,10 @@ class HomeActivity : AppCompatActivity(), ForStartLive, AllMcq_Fragment.OnDiagra
             }
             hide_Visible_TopBotomBar(false)
         }catch (ex :Exception){ (ex.printStackTrace())}
+    }
+
+    fun testCheck() {
+
     }
 
 
@@ -297,7 +302,9 @@ class HomeActivity : AppCompatActivity(), ForStartLive, AllMcq_Fragment.OnDiagra
                 else if (position == 1) {
                     viewBinding. llSideBar.setVisibility(View.GONE)
                     viewBinding.llBottom.visibility = View.VISIBLE
-                    replacefrag_withBackStack(ft, AddClassSubject(),Bundle(),"AddSubject")
+                    var fragmentManager = (it.context as FragmentActivity).supportFragmentManager
+
+                    replacefrag_withBackStack(fragmentManager.beginTransaction(), AddClassSubject(),Bundle(),"HomeFrag")
 
                 }else if (position == 2) {
                     logout()

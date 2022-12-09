@@ -13,9 +13,11 @@ class utills {
         ) {
             ft.replace(R.id.framehoome, fragment)
             fragment.arguments = bundle
-              ft.addToBackStack(screenName);
+            ft.addToBackStack(screenName);
             ft.commit()
         }
+
+
         fun replacefrag_noBackStack(ft: FragmentTransaction, fragment: Fragment, bundle: Bundle?, screenName: String?
         ) {
             ft.replace(R.id.framehoome, fragment)
